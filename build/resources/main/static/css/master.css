@@ -1,0 +1,72 @@
+#editor {
+	width: 600px;
+	height: 320px;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.center-feedback {
+	position: relative;
+	top: -3px;
+	margin-left: 10px;
+}
+
+.center-feedback-2 {
+	position: relative;
+	top: -3px;
+	left: 10px;
+}
+
+.Incorrect:before {
+	color: #f44336;
+	content: ' \2717';
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.Incorrect-sm:before {
+	color: #f44336;
+	content: ' \2717';
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.Correct:before {
+	color: #4caf50;
+	content: ' \2713';
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.Correct-sm:before {
+	color: #4caf50;
+	content: ' \2713';
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.Almost:before {
+	color: #ffc107;
+	content: ' \2248';
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.Almost-sm:before {
+	color: #ffc107;
+	content: ' \2248';
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.accordion-toggle {
+	cursor: pointer;
+}
+
+.accordion-content {
+	display: none;
+}
+
+.accordion-content.default {
+	display: block;
+}

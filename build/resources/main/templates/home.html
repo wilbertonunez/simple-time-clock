@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Simple Time Clock</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="shortcut icon" th:href="@{/img/favicon.png}" type="image/x-icon" />
+<link rel="icon" th:href="@{/img/favicon.png}" type="image/x-icon" />
+
+
+<link rel="stylesheet" th:href="@{/css/bulma.css}" type="text/css" />
+<link rel="stylesheet" th:href="@{/css/master.css}" type="text/css" />
+
+</head>
+<body>
+
+	<div th:replace="fragments/navbar :: content"
+		th:with="active_tab='home'"></div>
+
+	<section class="hero is-primary">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-vcentered">
+					<div class="column">
+						<p class="title">Welcome!</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="content">
+
+				<form method="post" action="/process"
+					enctype="application/x-www-form-urlencoded">
+
+
+					<label class="label">Enter your user ID:</label> <input type="text"
+						name="id" /> <select name="clockaction">
+						<option value="shift">Start/end shift</option>
+						<option value="break">Start/end break</option>
+						<!-- <option value="break-lunch">Start/end lunch</option> -->
+						<!-- <option value="activity">See recent activity</option> -->
+					</select>
+
+					<br/> <br/>
+					<div>
+						<input type="submit" value="Submit" class="button is-primary" />
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</section>
+
+	<div th:replace="fragments/footer :: content"></div>
+
+	<script th:src="@{/js/ace.js}" type="text/javascript" charset="utf-8"></script>
+
+	<script>
+
+
+		$(document).ready(function($) {
+			
+		});
+	</script>
+</body>
+</html>

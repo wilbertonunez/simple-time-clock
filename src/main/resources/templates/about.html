@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Simple Time Clock</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="shortcut icon" th:href="@{/img/favicon.png}" type="image/x-icon" />
+<link rel="icon" th:href="@{/img/favicon.png}" type="image/x-icon" />
+
+
+<link rel="stylesheet" th:href="@{/css/bulma.css}" type="text/css" />
+<link rel="stylesheet" th:href="@{/css/master.css}" type="text/css" />
+
+</head>
+<body>
+
+	<div th:replace="fragments/navbar :: content"
+		th:with="active_tab='home'"></div>
+
+	<section class="hero is-primary">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-vcentered">
+					<div class="column">
+						<p class="title">About</p>
+						<!-- <p class="subtitle">Remember this is an early-stage prototype
+						</p> -->
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+	</section>
+
+	<section class="section">
+		<div class="container">
+
+			<div class="content">
+				<p> This application will keep track of your punches to start or end your work shifts and your breaks.
+				Simply, type in your user ID, select the action you want to perform and click the Submit button.
+					
+				</p>
+			</div>
+
+		</div>
+	</section>
+	
+	<div th:replace="fragments/footer :: content"></div>
+
+</body>
+</html>

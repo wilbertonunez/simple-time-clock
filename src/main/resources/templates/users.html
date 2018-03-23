@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Large-Scale Personalized Feedback in Introductory
+	Programming Courses</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="shortcut icon" th:href="@{/favicon.png}" type="image/x-icon" />
+<link rel="icon" th:href="@{/favicon.png}" type="image/x-icon" />
+
+
+<link rel="stylesheet" th:href="@{/css/bulma.css}" type="text/css" />
+<link rel="stylesheet" th:href="@{/css/master.css}" type="text/css" />
+
+</head>
+<body>
+
+	<div th:replace="fragments/navbar :: content"
+		th:with="active_tab='home'"></div>
+
+	<section class="hero is-primary">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-vcentered">
+					<div class="column">
+						<p class="title">Users</p>
+						<!-- <p class="subtitle">Remember this is an early-stage prototype
+						</p> -->
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<h1 class="title">Users</h1>
+			<hr />
+
+			<div class="content">
+
+				<ol>
+  					<li>Go to the "Personalized feedback" tab or click <a th:href="@{/feedback}">here</a></li>
+  					<li>Paste your code in the text area on the left, including the name of the method and the curly braces enclosing the implementation.</li>
+ 					<li>Click on the "Get feefback" button. The feedback for your code will appear on the right.</li>
+ 					<li>Optionally click on any feedback item to see more detailed feedback if any is available.</li>
+				</ol>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- <div th:replace="fragments/footer :: content"></div> -->
+
+</body>
+</html>
