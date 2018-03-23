@@ -52,7 +52,7 @@ public class MainController {
 		} else if(clockaction.startsWith("break")) {
 			message = processBreak(userId);
 		} else if(clockaction.equals("activity")) {
-			message = "Not implemented yet!"; // TO DO
+			message = "Not implemented yet!";
 		}
 		
 		System.out.println(message);
